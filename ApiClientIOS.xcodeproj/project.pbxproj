@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B730F0B829034A950044D5F0 /* ConstantsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B730F0B729034A950044D5F0 /* ConstantsTest.swift */; };
+		B76E833829032C1D000CE627 /* ApiClientIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76E832D29032C1D000CE627 /* ApiClientIOS.framework */; };
+		B76E838929032F0A000CE627 /* DocumentQueryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836529032F0A000CE627 /* DocumentQueryAPI.swift */; };
+		B76E838A29032F0A000CE627 /* BiometricVerificationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836629032F0A000CE627 /* BiometricVerificationAPI.swift */; };
+		B76E838B29032F0A000CE627 /* DocumentQueryResponseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836929032F0A000CE627 /* DocumentQueryResponseBase.swift */; };
+		B76E838C29032F0A000CE627 /* DocumentTypeEnumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836A29032F0A000CE627 /* DocumentTypeEnumeration.swift */; };
+		B76E838D29032F0A000CE627 /* DocumentQueryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836B29032F0A000CE627 /* DocumentQueryRequest.swift */; };
+		B76E838E29032F0A000CE627 /* ValidationProblemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836C29032F0A000CE627 /* ValidationProblemDetails.swift */; };
+		B76E838F29032F0A000CE627 /* DocumentAvailableResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836D29032F0A000CE627 /* DocumentAvailableResponse.swift */; };
+		B76E839029032F0A000CE627 /* Finger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836E29032F0A000CE627 /* Finger.swift */; };
+		B76E839129032F0A000CE627 /* ProblemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E836F29032F0A000CE627 /* ProblemDetails.swift */; };
+		B76E839229032F0A000CE627 /* BiometricVerificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E837129032F0A000CE627 /* BiometricVerificationRequest.swift */; };
+		B76E839329032F0A000CE627 /* BiometricVerifiedResponseAllOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E837229032F0A000CE627 /* BiometricVerifiedResponseAllOf.swift */; };
+		B76E839429032F0A000CE627 /* BiometricVerificationResponseBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E837329032F0A000CE627 /* BiometricVerificationResponseBase.swift */; };
+		B76E839529032F0A000CE627 /* BiometricVerifiedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E837429032F0A000CE627 /* BiometricVerifiedResponse.swift */; };
+		B76E839629032F0A000CE627 /* BiometricVerificationResponseBase.json in Resources */ = {isa = PBXBuildFile; fileRef = B76E837729032F0A000CE627 /* BiometricVerificationResponseBase.json */; };
+		B76E839729032F0A000CE627 /* BiometricVerifiedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B76E837829032F0A000CE627 /* BiometricVerifiedResponse.json */; };
+		B76E839829032F0A000CE627 /* ProblemDetailsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B76E837A29032F0A000CE627 /* ProblemDetailsMock.json */; };
+		B76E839929032F0A000CE627 /* DocumentAvailableResponseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B76E837B29032F0A000CE627 /* DocumentAvailableResponseMock.json */; };
+		B76E839A29032F0A000CE627 /* DocumentQueryResponseBaseMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B76E837C29032F0A000CE627 /* DocumentQueryResponseBaseMock.json */; };
+		B76E839B29032F0A000CE627 /* ValidationProblemDetailsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = B76E837D29032F0A000CE627 /* ValidationProblemDetailsMock.json */; };
+		B76E839C29032F0A000CE627 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E837F29032F0A000CE627 /* Constants.swift */; };
+		B76E839D29032F0A000CE627 /* networkingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E838129032F0A000CE627 /* networkingApi.swift */; };
+		B76E839E29032F0A000CE627 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E838329032F0A000CE627 /* StringUtils.swift */; };
+		B76E839F29032F0A000CE627 /* DocumentQueryProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E838529032F0A000CE627 /* DocumentQueryProviderMock.swift */; };
+		B76E83A029032F0A000CE627 /* DocumentQueryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E838629032F0A000CE627 /* DocumentQueryProvider.swift */; };
+		B76E83A129032F0A000CE627 /* BiometricVerificationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E838729032F0A000CE627 /* BiometricVerificationProviderMock.swift */; };
+		B76E83A229032F0A000CE627 /* BiometricVerificationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E838829032F0A000CE627 /* BiometricVerificationProvider.swift */; };
+		B76E83A729032FB1000CE627 /* DocumentQueryApiIntegratedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E83A329032FB1000CE627 /* DocumentQueryApiIntegratedTest.swift */; };
+		B76E83A829032FB1000CE627 /* BiometricVerificationApiIntegratedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E83A429032FB1000CE627 /* BiometricVerificationApiIntegratedTest.swift */; };
+		B76E83A929032FB1000CE627 /* DocumentQueryApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E83A529032FB1000CE627 /* DocumentQueryApiTest.swift */; };
+		B76E83AA29032FB1000CE627 /* BiometricVerificationApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E83A629032FB1000CE627 /* BiometricVerificationApiTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B76E833929032C1D000CE627 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B76E832429032C1D000CE627 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B76E832C29032C1D000CE627;
+			remoteInfo = ApiClientIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B730F0B729034A950044D5F0 /* ConstantsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTest.swift; sourceTree = "<group>"; };
+		B76E832D29032C1D000CE627 /* ApiClientIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiClientIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76E833729032C1D000CE627 /* ApiClientIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiClientIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76E836529032F0A000CE627 /* DocumentQueryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentQueryAPI.swift; sourceTree = "<group>"; };
+		B76E836629032F0A000CE627 /* BiometricVerificationAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerificationAPI.swift; sourceTree = "<group>"; };
+		B76E836929032F0A000CE627 /* DocumentQueryResponseBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentQueryResponseBase.swift; sourceTree = "<group>"; };
+		B76E836A29032F0A000CE627 /* DocumentTypeEnumeration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentTypeEnumeration.swift; sourceTree = "<group>"; };
+		B76E836B29032F0A000CE627 /* DocumentQueryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentQueryRequest.swift; sourceTree = "<group>"; };
+		B76E836C29032F0A000CE627 /* ValidationProblemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationProblemDetails.swift; sourceTree = "<group>"; };
+		B76E836D29032F0A000CE627 /* DocumentAvailableResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentAvailableResponse.swift; sourceTree = "<group>"; };
+		B76E836E29032F0A000CE627 /* Finger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Finger.swift; sourceTree = "<group>"; };
+		B76E836F29032F0A000CE627 /* ProblemDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemDetails.swift; sourceTree = "<group>"; };
+		B76E837129032F0A000CE627 /* BiometricVerificationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerificationRequest.swift; sourceTree = "<group>"; };
+		B76E837229032F0A000CE627 /* BiometricVerifiedResponseAllOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerifiedResponseAllOf.swift; sourceTree = "<group>"; };
+		B76E837329032F0A000CE627 /* BiometricVerificationResponseBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerificationResponseBase.swift; sourceTree = "<group>"; };
+		B76E837429032F0A000CE627 /* BiometricVerifiedResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerifiedResponse.swift; sourceTree = "<group>"; };
+		B76E837729032F0A000CE627 /* BiometricVerificationResponseBase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BiometricVerificationResponseBase.json; sourceTree = "<group>"; };
+		B76E837829032F0A000CE627 /* BiometricVerifiedResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BiometricVerifiedResponse.json; sourceTree = "<group>"; };
+		B76E837A29032F0A000CE627 /* ProblemDetailsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProblemDetailsMock.json; sourceTree = "<group>"; };
+		B76E837B29032F0A000CE627 /* DocumentAvailableResponseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DocumentAvailableResponseMock.json; sourceTree = "<group>"; };
+		B76E837C29032F0A000CE627 /* DocumentQueryResponseBaseMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DocumentQueryResponseBaseMock.json; sourceTree = "<group>"; };
+		B76E837D29032F0A000CE627 /* ValidationProblemDetailsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ValidationProblemDetailsMock.json; sourceTree = "<group>"; };
+		B76E837F29032F0A000CE627 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B76E838129032F0A000CE627 /* networkingApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkingApi.swift; sourceTree = "<group>"; };
+		B76E838329032F0A000CE627 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		B76E838529032F0A000CE627 /* DocumentQueryProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentQueryProviderMock.swift; sourceTree = "<group>"; };
+		B76E838629032F0A000CE627 /* DocumentQueryProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentQueryProvider.swift; sourceTree = "<group>"; };
+		B76E838729032F0A000CE627 /* BiometricVerificationProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerificationProviderMock.swift; sourceTree = "<group>"; };
+		B76E838829032F0A000CE627 /* BiometricVerificationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerificationProvider.swift; sourceTree = "<group>"; };
+		B76E83A329032FB1000CE627 /* DocumentQueryApiIntegratedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentQueryApiIntegratedTest.swift; sourceTree = "<group>"; };
+		B76E83A429032FB1000CE627 /* BiometricVerificationApiIntegratedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerificationApiIntegratedTest.swift; sourceTree = "<group>"; };
+		B76E83A529032FB1000CE627 /* DocumentQueryApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentQueryApiTest.swift; sourceTree = "<group>"; };
+		B76E83A629032FB1000CE627 /* BiometricVerificationApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricVerificationApiTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B76E832A29032C1D000CE627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B76E833429032C1D000CE627 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76E833829032C1D000CE627 /* ApiClientIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B76E832329032C1D000CE627 = {
+			isa = PBXGroup;
+			children = (
+				B76E832F29032C1D000CE627 /* ApiClientIOS */,
+				B76E833B29032C1D000CE627 /* ApiClientIOSTests */,
+				B76E832E29032C1D000CE627 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B76E832E29032C1D000CE627 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B76E832D29032C1D000CE627 /* ApiClientIOS.framework */,
+				B76E833729032C1D000CE627 /* ApiClientIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B76E832F29032C1D000CE627 /* ApiClientIOS */ = {
+			isa = PBXGroup;
+			children = (
+				B76E836429032F0A000CE627 /* api */,
+				B76E837529032F0A000CE627 /* mocks */,
+				B76E836729032F0A000CE627 /* models */,
+				B76E838029032F0A000CE627 /* networking */,
+				B76E838429032F0A000CE627 /* providers */,
+				B76E837E29032F0A000CE627 /* resources */,
+				B76E838229032F0A000CE627 /* utils */,
+			);
+			path = ApiClientIOS;
+			sourceTree = "<group>";
+		};
+		B76E833B29032C1D000CE627 /* ApiClientIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				B76E83A429032FB1000CE627 /* BiometricVerificationApiIntegratedTest.swift */,
+				B76E83A629032FB1000CE627 /* BiometricVerificationApiTest.swift */,
+				B76E83A329032FB1000CE627 /* DocumentQueryApiIntegratedTest.swift */,
+				B76E83A529032FB1000CE627 /* DocumentQueryApiTest.swift */,
+				B730F0B729034A950044D5F0 /* ConstantsTest.swift */,
+			);
+			path = ApiClientIOSTests;
+			sourceTree = "<group>";
+		};
+		B76E836429032F0A000CE627 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				B76E836529032F0A000CE627 /* DocumentQueryAPI.swift */,
+				B76E836629032F0A000CE627 /* BiometricVerificationAPI.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		B76E836729032F0A000CE627 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B76E836829032F0A000CE627 /* documentEndpoint */,
+				B76E837029032F0A000CE627 /* biometricEndPoint */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		B76E836829032F0A000CE627 /* documentEndpoint */ = {
+			isa = PBXGroup;
+			children = (
+				B76E836929032F0A000CE627 /* DocumentQueryResponseBase.swift */,
+				B76E836A29032F0A000CE627 /* DocumentTypeEnumeration.swift */,
+				B76E836B29032F0A000CE627 /* DocumentQueryRequest.swift */,
+				B76E836C29032F0A000CE627 /* ValidationProblemDetails.swift */,
+				B76E836D29032F0A000CE627 /* DocumentAvailableResponse.swift */,
+				B76E836E29032F0A000CE627 /* Finger.swift */,
+				B76E836F29032F0A000CE627 /* ProblemDetails.swift */,
+			);
+			path = documentEndpoint;
+			sourceTree = "<group>";
+		};
+		B76E837029032F0A000CE627 /* biometricEndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				B76E837129032F0A000CE627 /* BiometricVerificationRequest.swift */,
+				B76E837229032F0A000CE627 /* BiometricVerifiedResponseAllOf.swift */,
+				B76E837329032F0A000CE627 /* BiometricVerificationResponseBase.swift */,
+				B76E837429032F0A000CE627 /* BiometricVerifiedResponse.swift */,
+			);
+			path = biometricEndPoint;
+			sourceTree = "<group>";
+		};
+		B76E837529032F0A000CE627 /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B76E837629032F0A000CE627 /* BiometricVerificationAPI */,
+				B76E837929032F0A000CE627 /* DocumnentQueryAPI */,
+			);
+			path = mocks;
+			sourceTree = "<group>";
+		};
+		B76E837629032F0A000CE627 /* BiometricVerificationAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B76E837729032F0A000CE627 /* BiometricVerificationResponseBase.json */,
+				B76E837829032F0A000CE627 /* BiometricVerifiedResponse.json */,
+			);
+			path = BiometricVerificationAPI;
+			sourceTree = "<group>";
+		};
+		B76E837929032F0A000CE627 /* DocumnentQueryAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B76E837A29032F0A000CE627 /* ProblemDetailsMock.json */,
+				B76E837B29032F0A000CE627 /* DocumentAvailableResponseMock.json */,
+				B76E837C29032F0A000CE627 /* DocumentQueryResponseBaseMock.json */,
+				B76E837D29032F0A000CE627 /* ValidationProblemDetailsMock.json */,
+			);
+			path = DocumnentQueryAPI;
+			sourceTree = "<group>";
+		};
+		B76E837E29032F0A000CE627 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				B76E837F29032F0A000CE627 /* Constants.swift */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		B76E838029032F0A000CE627 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				B76E838129032F0A000CE627 /* networkingApi.swift */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		B76E838229032F0A000CE627 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B76E838329032F0A000CE627 /* StringUtils.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		B76E838429032F0A000CE627 /* providers */ = {
+			isa = PBXGroup;
+			children = (
+				B76E838529032F0A000CE627 /* DocumentQueryProviderMock.swift */,
+				B76E838629032F0A000CE627 /* DocumentQueryProvider.swift */,
+				B76E838729032F0A000CE627 /* BiometricVerificationProviderMock.swift */,
+				B76E838829032F0A000CE627 /* BiometricVerificationProvider.swift */,
+			);
+			path = providers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B76E832829032C1D000CE627 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B76E832C29032C1D000CE627 /* ApiClientIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B76E834129032C1D000CE627 /* Build configuration list for PBXNativeTarget "ApiClientIOS" */;
+			buildPhases = (
+				B76E832829032C1D000CE627 /* Headers */,
+				B76E832929032C1D000CE627 /* Sources */,
+				B76E832A29032C1D000CE627 /* Frameworks */,
+				B76E832B29032C1D000CE627 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApiClientIOS;
+			productName = ApiClientIOS;
+			productReference = B76E832D29032C1D000CE627 /* ApiClientIOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B76E833629032C1D000CE627 /* ApiClientIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B76E834429032C1D000CE627 /* Build configuration list for PBXNativeTarget "ApiClientIOSTests" */;
+			buildPhases = (
+				B76E833329032C1D000CE627 /* Sources */,
+				B76E833429032C1D000CE627 /* Frameworks */,
+				B76E833529032C1D000CE627 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B76E833A29032C1D000CE627 /* PBXTargetDependency */,
+			);
+			name = ApiClientIOSTests;
+			productName = ApiClientIOSTests;
+			productReference = B76E833729032C1D000CE627 /* ApiClientIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B76E832429032C1D000CE627 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					B76E832C29032C1D000CE627 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					B76E833629032C1D000CE627 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = B76E832729032C1D000CE627 /* Build configuration list for PBXProject "ApiClientIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B76E832329032C1D000CE627;
+			productRefGroup = B76E832E29032C1D000CE627 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B76E832C29032C1D000CE627 /* ApiClientIOS */,
+				B76E833629032C1D000CE627 /* ApiClientIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B76E832B29032C1D000CE627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76E839629032F0A000CE627 /* BiometricVerificationResponseBase.json in Resources */,
+				B76E839729032F0A000CE627 /* BiometricVerifiedResponse.json in Resources */,
+				B76E839A29032F0A000CE627 /* DocumentQueryResponseBaseMock.json in Resources */,
+				B76E839B29032F0A000CE627 /* ValidationProblemDetailsMock.json in Resources */,
+				B76E839829032F0A000CE627 /* ProblemDetailsMock.json in Resources */,
+				B76E839929032F0A000CE627 /* DocumentAvailableResponseMock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B76E833529032C1D000CE627 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B76E832929032C1D000CE627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76E838F29032F0A000CE627 /* DocumentAvailableResponse.swift in Sources */,
+				B76E838C29032F0A000CE627 /* DocumentTypeEnumeration.swift in Sources */,
+				B76E839029032F0A000CE627 /* Finger.swift in Sources */,
+				B76E838A29032F0A000CE627 /* BiometricVerificationAPI.swift in Sources */,
+				B76E83A129032F0A000CE627 /* BiometricVerificationProviderMock.swift in Sources */,
+				B76E839E29032F0A000CE627 /* StringUtils.swift in Sources */,
+				B76E839D29032F0A000CE627 /* networkingApi.swift in Sources */,
+				B76E83A029032F0A000CE627 /* DocumentQueryProvider.swift in Sources */,
+				B76E839329032F0A000CE627 /* BiometricVerifiedResponseAllOf.swift in Sources */,
+				B76E839429032F0A000CE627 /* BiometricVerificationResponseBase.swift in Sources */,
+				B76E83A229032F0A000CE627 /* BiometricVerificationProvider.swift in Sources */,
+				B76E838B29032F0A000CE627 /* DocumentQueryResponseBase.swift in Sources */,
+				B76E839129032F0A000CE627 /* ProblemDetails.swift in Sources */,
+				B76E839F29032F0A000CE627 /* DocumentQueryProviderMock.swift in Sources */,
+				B76E838E29032F0A000CE627 /* ValidationProblemDetails.swift in Sources */,
+				B76E838929032F0A000CE627 /* DocumentQueryAPI.swift in Sources */,
+				B76E838D29032F0A000CE627 /* DocumentQueryRequest.swift in Sources */,
+				B76E839C29032F0A000CE627 /* Constants.swift in Sources */,
+				B76E839529032F0A000CE627 /* BiometricVerifiedResponse.swift in Sources */,
+				B76E839229032F0A000CE627 /* BiometricVerificationRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B76E833329032C1D000CE627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B76E83AA29032FB1000CE627 /* BiometricVerificationApiTest.swift in Sources */,
+				B76E83A729032FB1000CE627 /* DocumentQueryApiIntegratedTest.swift in Sources */,
+				B76E83A929032FB1000CE627 /* DocumentQueryApiTest.swift in Sources */,
+				B730F0B829034A950044D5F0 /* ConstantsTest.swift in Sources */,
+				B76E83A829032FB1000CE627 /* BiometricVerificationApiIntegratedTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B76E833A29032C1D000CE627 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B76E832C29032C1D000CE627 /* ApiClientIOS */;
+			targetProxy = B76E833929032C1D000CE627 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B76E833F29032C1D000CE627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B76E834029032C1D000CE627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B76E834229032C1D000CE627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.co.getgroup.ApiClientIOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B76E834329032C1D000CE627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.co.getgroup.ApiClientIOS;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B76E834529032C1D000CE627 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.co.getgroup.ApiClientIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B76E834629032C1D000CE627 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.co.getgroup.ApiClientIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B76E832729032C1D000CE627 /* Build configuration list for PBXProject "ApiClientIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76E833F29032C1D000CE627 /* Debug */,
+				B76E834029032C1D000CE627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B76E834129032C1D000CE627 /* Build configuration list for PBXNativeTarget "ApiClientIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76E834229032C1D000CE627 /* Debug */,
+				B76E834329032C1D000CE627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B76E834429032C1D000CE627 /* Build configuration list for PBXNativeTarget "ApiClientIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B76E834529032C1D000CE627 /* Debug */,
+				B76E834629032C1D000CE627 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B76E832429032C1D000CE627 /* Project object */;
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Request was received but can not be processed",
+  "status": 500,
+  "detail": "Request can not be processed at this time. Please try later or contact an administrator",
+  "Message": "Error en la fuente"
+}

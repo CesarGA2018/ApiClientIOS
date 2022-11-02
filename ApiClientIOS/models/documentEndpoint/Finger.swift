@@ -1,0 +1,15 @@
+public enum Finger: String, Codable, CaseIterable {
+    case rightThumb = "RightThumb"
+    case rightIndex = "RightIndex"
+    case rightMiddle = "RightMiddle"
+    case rightMiddleFinger = "RightMiddleFinger"
+    case rightRingFinger = "RightRingFinger"
+    case rightRing = "RightRing"
+    case rightLittle = "RightLittle"
+    case rightLittleFinger = "RightLittleFinger"
+    case leftThumb = "LeftThumb"
+    case leftIndex = "LeftIndex"
+    case leftMiddleFinger = "LeftMiddleFinger"
+    case leftRingFinger = "LeftRingFinger"
+    case leftLittleFinger = "LeftLittleFinger"
+}
